@@ -2,11 +2,11 @@ import React from "react";
 import user from "../data/user";
 import Links from "./Links";
 
-function About(props) {
+function About({bio}) {
   return (
     <div id="about">
       <h2>About Me</h2>
-      {<p>{user.bio} ? {user.bio} : null </p>}
+      {bio ? <p>{bio}</p> : null }
       {/* //{console.log(user)} */}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       <Links />
